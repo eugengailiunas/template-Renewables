@@ -1,0 +1,11 @@
+{
+  "name": "Renewables",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/eugengailiunas/template-Renewables.git",
+  "author": "«Eugen <eugengailiunas@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "8.0.1"
+  }
+}
