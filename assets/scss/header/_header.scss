@@ -1,0 +1,55 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.page-header {
+
+  &__grid {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: $gap;
+    grid-template-areas: "menu logo btn";
+    align-items: center;
+    border-bottom: 1px solid $color-gray;
+  }
+
+  &__menu {
+    grid-area: menu;
+  }
+
+  &__logo {
+    grid-area: logo;
+
+    &-image {
+      padding-left: 32%;
+    }
+  }
+
+  &__button {
+    grid-area: btn;
+  }
+
+
+  &__title {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 100%;
+    /* or 100px */
+
+    letter-spacing: -0.07em;
+
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  &__background {}
+
+  &__background-image {
+    width: 100%;
+
+  }
+}
