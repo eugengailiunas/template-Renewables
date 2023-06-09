@@ -2,16 +2,26 @@
 @use "../mixins" as *;
 
 .page-header {
+  position: relative;
+
 
   &__grid {
-    padding-top: 30px;
-    padding-bottom: 20px;
     display: grid;
     grid-template-columns: auto 1fr;
     gap: $gap;
     grid-template-areas: "menu logo btn";
     align-items: center;
     border-bottom: 1px solid $color-gray;
+
+    @include sm-min {
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+
+    @include sm {
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
   }
 
   &__menu {
@@ -21,9 +31,16 @@
   &__logo {
     grid-area: logo;
 
-    &-image {
-      padding-left: 32%;
+    @include lg-min {
+      margin: auto;
     }
+
+    @include lg {
+      margin: auto;
+    }
+
+
+    &-image {}
   }
 
   &__button {
@@ -35,21 +52,45 @@
     font-family: $font-primary;
     font-style: normal;
     font-weight: 400;
-    font-size: 100px;
     line-height: 100%;
-    /* or 100px */
-
     letter-spacing: -0.07em;
-
     margin: 0;
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
 
-  &__background {}
 
-  &__background-image {
-    width: 100%;
+    @include xl-min {
+      font-size: 100px;
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
 
+    @include xl-md {
+      font-size: 80px;
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
+    @include md-sm {
+      font-size: 60px;
+      padding-top: 45px;
+      padding-bottom: 40px;
+    }
+
+    @include sm {
+      font-size: 40px;
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
   }
 }
+
+.background {
+  width: 100%;
+  min-height: 570px;
+  background-color: #949ea4;
+  background-image: url(../img/field.jpg);
+  background-size: cover;
+  background-position-x: left;
+  background-position-y: top;
+}
+
+.background__content {}
