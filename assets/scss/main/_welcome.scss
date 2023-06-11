@@ -1,0 +1,177 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.main {}
+
+.welcome {
+  position: relative;
+  padding-top: 150px;
+
+}
+
+.welcome__container {
+  width: min(100% - 50px * 2, 1325px);
+
+  margin-inline: auto;
+}
+
+.welcome__title {
+
+  line-height: 1;
+  letter-spacing: -0.07em;
+
+  color: $color-primary;
+
+  @include lg-min {
+    margin-bottom: 50px;
+    max-width: 864px;
+    margin: auto;
+
+    font-size: 60px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include lg-sm {
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin: auto;
+
+    font-size: 50px;
+    max-width: 100%;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+  }
+
+  @include sm {
+    margin-bottom: 30px;
+    max-width: 280px;
+    margin: auto;
+
+    font-size: 30px;
+    max-width: 100%;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.welcome__content {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  // margin: 0 280px 0 auto;
+  max-width: 520px;
+  padding-right: 40px;
+
+  @include lg-min {
+    left: 44%;
+  }
+
+  @include lg-sm {
+    left: 30%;
+  }
+
+  @include sm {
+    left: 23%;
+  }
+}
+
+.welcome__desc {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+
+  color: $color-primary;
+
+  @include lg-min {
+    margin-bottom: 50px;
+    font-size: 20px;
+    max-width: 100%;
+  }
+
+  @include lg-sm {
+    margin-bottom: 50px;
+    font-size: 20px;
+    max-width: 100%;
+  }
+
+  @include sm {
+    margin-bottom: 30px;
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+}
+
+.welcome__buttons {
+
+  // display: flex;
+  // flex-direction: row;
+  // align-items: flex-start;
+  // gap: 15px;
+
+  @include md-min {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 150px;
+  }
+
+  @include md {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 150px;
+  }
+}
+
+.buttons__item {}
+
+.welcome__button {
+  display: inline-block;
+  padding: 10px 30px 12px;
+  text-align: center;
+  gap: 10px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+
+  letter-spacing: -0.04em;
+  color: $color-primary;
+
+
+
+  border: 1px solid $color-primary;
+  border-radius: 50px;
+
+
+  @include md-min {
+    min-width: 190px;
+    font-size: 20px;
+  }
+
+  @include md {
+    min-width: 230px;
+    font-size: 16px;
+  }
+}
+
+// .welcome__button-sm {
+//   @include sm-min {
+//     width: 50%;
+//     background-color: red;
+//   }
+// }
+
+.welcome__button-dark {
+  background-color: $color-primary;
+  color: #ffffff;
+}
