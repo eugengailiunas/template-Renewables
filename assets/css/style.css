@@ -407,6 +407,7 @@ li :hover {
   position: relative;
 
   padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .welcome__container {
@@ -424,8 +425,6 @@ li :hover {
 }
 
 .welcome__content {
-  position: absolute;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,6 +434,7 @@ li :hover {
       flex-direction: column;
 
   max-width: 520px;
+  margin: 0 20% 0 auto;
   padding-right: 40px;
 }
 
@@ -495,8 +495,6 @@ li :hover {
     -ms-flex-direction: row;
         flex-direction: row;
 
-    margin-bottom: 150px;
-
     gap: 15px;
   }
   .welcome__button {
@@ -536,7 +534,7 @@ li :hover {
     font-weight: 400;
   }
   .welcome__content {
-    left: 44%;
+    margin: 0 20% 0 auto;
   }
   .welcome__desc {
     max-width: 100%;
@@ -588,13 +586,7 @@ li :hover {
     font-weight: 400;
   }
   .welcome__content {
-    left: 30%;
-  }
-  .welcome__desc {
-    max-width: 100%;
-    margin-bottom: 50px;
-
-    font-size: 20px;
+    margin: 0 50px 0 15%;
   }
 }
 
@@ -605,6 +597,12 @@ li :hover {
     display: flex;
 
     gap: 18px;
+  }
+  .welcome__desc {
+    max-width: 100%;
+    margin-bottom: 50px;
+
+    font-size: 20px;
   }
 }
 
@@ -621,8 +619,6 @@ li :hover {
     -ms-flex-direction: column;
         flex-direction: column;
 
-    margin-bottom: 150px;
-
     gap: 15px;
   }
   .welcome__button {
@@ -638,6 +634,12 @@ li :hover {
     padding-bottom: 40px;
 
     font-size: 60px;
+  }
+  .welcome__desc {
+    max-width: 80%;
+    margin-bottom: 30px;
+
+    font-size: 16px;
   }
 }
 
@@ -669,7 +671,7 @@ li :hover {
     font-weight: 400;
   }
   .welcome__content {
-    left: 23%;
+    margin: 0 auto 0 10%;
   }
   .welcome__desc {
     max-width: 90%;
