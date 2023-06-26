@@ -1,0 +1,38 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.products {
+  padding-bottom: 100px;
+}
+
+.container {}
+
+.products__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.products__image {
+  width: 350px;
+  height: 420px;
+}
+
+.item__content {}
+
+.products__item {}
+
+.products__desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.products__links {}
+
+.product__link {}
+
+.products__price {}
