@@ -42,6 +42,10 @@ a {
   color: $color-primary;
 }
 
+a:hover {
+  opacity: 0.6;
+}
+
 li {
   :hover {
     transition: 0.2s ease;
